@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: "Arial";
+}
+
+h1 {
+    font-family: "Arial";
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 50px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 2px 3px 4px;
+}
+
+#campoRicercaTitolo {
+    font-size: 18px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+#campoRicercaPosizione {
+    font-size: 18px;
+    padding: 10px;
+    padding-right: 30px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+button {
+    color: #747474;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+button:hover {
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px;
+}
+
+button:active {
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px;
+}
+
+#bottoneRicerca {
+    margin-bottom: 10px;
+}
+
+#numeroRisultati {
+    font-family: "Arial";
+    font-weight: bold;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 2px 3px 4px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 30px;
+}
+
+li {
+    margin-top: 15px;
+    margin-right: 50px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgba(128, 128, 128, 0.356);
+    font-family: "Arial";
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background: rgb(87, 9, 142);
+    background: linear-gradient(97deg, rgba(87, 9, 142, 1) 0%, rgba(230, 0, 117, 1) 100%);
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px;
+}
+
+
+/* GESTIONE RESPONSIVE, TOLGO IL FIXED COSì DA RENDERE SCORREVOLE LA LISTA DAI DISPOSITIVI MOBILE*/
+@media screen and (min-width: 653px) {
+
+    header {
+        position: fixed;
+        top: 0;
+    }
+
+    ul {
+        margin-top: 480px;
+    }
+}
